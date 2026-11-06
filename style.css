@@ -1,0 +1,54 @@
+:root{--teal:#1D9E75;--teal-hover:#178562;--teal-text:#0F7A59;--tint:#E1F5EE;--purple:#534AB7;--text:#3D3D3A;--text2:#666;--bg:#F9F7F5;--surface:#fff;--border:#E0E0DC;--radius:12px}
+@media (prefers-color-scheme:dark){:root{--teal:#2BB88A;--teal-hover:#4CCBA1;--teal-text:#4CCBA1;--tint:rgba(43,184,138,.16);--purple:#8F88E8;--text:#ECEBE6;--text2:#B4B3AC;--bg:#1C1C1A;--surface:#262624;--border:#3F3F3B}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--teal-text)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--text);text-decoration:none}
+nav .brand img{width:32px;height:32px}
+nav .links a{margin-left:18px;text-decoration:none;color:var(--text2);font-size:15px}
+.hero{text-align:center;padding:48px 0 32px}
+.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.15;margin:0 0 16px}
+.hero h1 span{color:var(--teal-text)}
+.hero p{font-size:19px;color:var(--text2);max-width:620px;margin:0 auto 28px}
+.btn{display:inline-block;padding:13px 26px;border-radius:8px;background:#0F7A59;color:#fff;font-weight:600;text-decoration:none;border:0}
+.btn:hover{background:#0b6248}
+.btn.alt{background:transparent;color:var(--teal-text);border:1.5px solid var(--teal)}
+.note{font-size:14px;color:var(--text2);margin-top:14px}
+.demo{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;max-width:520px;margin:36px auto 0;text-align:left;box-shadow:0 4px 24px rgba(0,0,0,.08)}
+.demo .field{border:1px solid var(--border);border-radius:8px;padding:10px 14px;font-size:16px;background:var(--bg)}
+.demo .caret{display:inline-block;width:1px;height:1.1em;background:var(--text);vertical-align:text-bottom}
+.demo .list{margin-top:8px;border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.demo .item{padding:10px 14px;font-size:14px;border-bottom:1px solid var(--border)}
+.demo .item:last-child{border:0}
+.demo .item.on{background:var(--tint)}
+.demo .item b{display:block;font-size:14px}
+.demo .item small{color:var(--text2)}
+section{padding:44px 0}
+h2{font-size:30px;text-align:center;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--text2);font-size:15px}
+.card .ico{font-size:28px;margin-bottom:8px}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.steps .card::before{counter-increment:s;content:counter(s);display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--tint);color:var(--teal-text);font-weight:700;align-items:center;justify-content:center;margin-bottom:10px}
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:700px;margin:0 auto}
+.plan{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px}
+.plan.pro{border:2px solid var(--teal)}
+.plan h3{margin:0}
+.price{font-size:40px;font-weight:700;margin:6px 0}
+.price small{font-size:15px;font-weight:400;color:var(--text2)}
+.plan ul{padding-left:0;list-style:none;margin:16px 0 22px}
+.plan li{padding:4px 0 4px 26px;position:relative;font-size:15px}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--teal-text);font-weight:700}
+details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--text2);margin:10px 0 0}
+footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--text2);font-size:14px}
+footer a{margin:0 10px}
+.doc{max-width:720px;margin:0 auto;padding:20px 0 60px}
+.doc h1{font-size:34px}
+.doc h2{text-align:left;font-size:21px;margin:30px 0 8px}
+.doc .updated{color:var(--text2);font-size:14px}
