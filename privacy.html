@@ -5,32 +5,44 @@
 <nav><a class="brand" href="./"><img src="logo.svg" alt="">QuickPaste</a></nav>
 <div class="doc">
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 2026-11-05</p>
-<p>QuickPaste is built to be private. In short: <strong>your saved text stays on your device, and we don't collect it.</strong></p>
+<p class="updated">Last updated: 2026-11-06</p>
+<p>QuickPaste is built to be private. In short: <strong>the text you save stays on your device and in your own browser account. We never receive it.</strong></p>
 
-<h2>What QuickPaste stores</h2>
-<p>The entries you save (names and text), your on/off setting, and, if you buy Pro, your license key. All of this is kept in your browser's local extension storage on your own device. We have no server that receives it.</p>
+<h2>What QuickPaste stores on your device</h2>
+<ul>
+<li>The entries you save (names and text).</li>
+<li>Your settings: the on/off switch and the list of sites where you turned QuickPaste off (Pro).</li>
+<li>If you buy Pro, your license key.</li>
+<li>A simple counter of how many times QuickPaste has filled in text for you. It is shown in settings, stays on your device, and is never sent anywhere.</li>
+</ul>
+
+<h2>Browser sync</h2>
+<p>If you are signed in to Chrome or Edge with browser sync turned on, QuickPaste keeps your entries and license key in step across your own browsers using your browser's built-in extension sync (<code>chrome.storage.sync</code>). That data travels through your Google or Microsoft account under their privacy terms. It never passes through QuickPaste's servers, and we cannot read it. Turn off sync in your browser settings to stop it.</p>
 
 <h2>What we do not do</h2>
 <ul>
-<li>No account or login.</li>
+<li>No account or login with us.</li>
 <li>No analytics, tracking, or advertising.</li>
-<li>No selling or sharing of data. We don't have your data.</li>
+<li>No selling or sharing of data.</li>
 <li>No inserting text into password fields, and no reading of password fields.</li>
+<li>No collecting of the pages you visit, what you type, or your entries.</li>
 </ul>
 
 <h2>Permissions and why</h2>
 <ul>
-<li><strong>Access to websites:</strong> to detect what you're typing in text fields and show suggestions, and to insert the text you choose. Page content is processed on your device only.</li>
-<li><strong>Clipboard read/write:</strong> some sites only accept a real paste. QuickPaste briefly places your chosen text on the clipboard, pastes it, and restores your previous clipboard. Clipboard contents are never stored or transmitted.</li>
-<li><strong>Storage:</strong> to save your entries locally.</li>
+<li><strong>Access to all websites:</strong> to notice what you are typing in a text field, show suggestions, and insert the text you choose. Page content is processed on your device only and is never sent to us.</li>
+<li><strong>Active tab:</strong> when you open the toolbar popup, QuickPaste reads the current site's address so you can switch QuickPaste off for that site (Pro). It is not stored unless you choose to disable the site.</li>
+<li><strong>Clipboard read/write:</strong> some sites only accept a real paste. QuickPaste briefly places your chosen text on the clipboard, pastes it, and restores your previous clipboard. It also copies an entry when you ask it to. Clipboard contents are never stored or transmitted.</li>
+<li><strong>Storage:</strong> to save your entries and settings, and to sync them through your browser account.</li>
 </ul>
 
-<h2>The one network request (Pro license)</h2>
-<p>When you activate a Pro license key, QuickPaste sends that key to our payment provider, Lemon Squeezy, to confirm it is valid. It may re-check occasionally. No entries or browsing data are sent. If you never activate Pro, QuickPaste makes no network requests. Purchases are handled by Lemon Squeezy under its own <a href="https://www.lemonsqueezy.com/privacy">privacy policy</a>.</p>
+<h2>Buying and activating Pro: what reaches our server</h2>
+<p>Payments are handled by <a href="https://stripe.com/privacy">Stripe</a>; we never see your card number. When you pay, Stripe gives us your <strong>email address</strong> and the order and payment reference. We store them in our license database (hosted on Amazon Web Services) and use the email only to send you your license key and to handle support, refunds and disputes.</p>
+<p>When you activate a Pro license key, and occasionally afterwards to confirm it is still valid, QuickPaste sends our license server the <strong>license key</strong>, a random device ID, and a device label such as "QuickPaste MacIntel". This is used only to check the key and to enforce the per-key device limit. No entries and no browsing data are sent. If you never activate Pro, QuickPaste makes no network requests.</p>
+<p>We keep license records for as long as the license exists, and for as long as needed for tax, refund and fraud-prevention purposes.</p>
 
 <h2>Deleting your data</h2>
-<p>Delete entries in QuickPaste's settings, or remove the extension to erase everything it stored.</p>
+<p>Delete entries in QuickPaste's settings, or remove the extension to erase everything it stored on that device. Synced copies are removed by deleting the entries on any synced browser, or through your browser account's sync controls. To have your email and license record deleted from our license database, contact us below (an active license that is deleted will stop working).</p>
 
 <h2>Changes and contact</h2>
 <p>If this policy changes, the date above will be updated. Questions: <a href="mailto:ylstudio824@gmail.com">ylstudio824@gmail.com</a>.</p>
