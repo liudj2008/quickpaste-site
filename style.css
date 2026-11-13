@@ -52,3 +52,6 @@ footer a{margin:0 10px}
 .doc h1{font-size:34px}
 .doc h2{text-align:left;font-size:21px;margin:30px 0 8px}
 .doc .updated{color:var(--text2);font-size:14px}
+
+a.card.vid{text-decoration:none;color:inherit;display:block}
+a.card.vid:hover{border-color:var(--teal)}
